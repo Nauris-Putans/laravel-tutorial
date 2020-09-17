@@ -1,5 +1,7 @@
 # Instagram copy
 
+Tutorial source: https://www.youtube.com/watch?v=ImtZ5yENzgE&ab_channel=freeCodeCamp.org 
+
 Webpage using **Apache, PHP, Laravel, phpMyAdmin and Mysql**
 
 ## Table of Contents
