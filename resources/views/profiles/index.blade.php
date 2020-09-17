@@ -4,11 +4,15 @@
 <div class="container">
     <div class="row">
         <div class="col-4 p-5 text-center">
-            <img alt="profile picture" class="rounded-circle" src="https://instagram.frix3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/35174804_604504909930928_4652890457196462080_n.jpg?_nc_ht=instagram.frix3-1.fna.fbcdn.net&_nc_ohc=IrjDanE7XtkAX99MxPq&oh=109c86296018ffa8c4735effbf5c8bb7&oe=5F8A0B7C">
+            <img src="{{ $user->profile->profileImage() }}" class="rounded-circle w-75" alt="profile picture" >
         </div>
         <div class="col-8 pt-5">
             <div class="d-flex justify-content-between align-items-baseline">
-                <h2>{{ $user->username }}</h2>
+                <div class="d-flex align-items-center pb-3">
+                    <div class="h4">{{ $user->username }}</div>
+
+                    <button class="btn btn-primary ml-4">Follow</button>
+                </div>
 
                 @can('update', $user->profile)
                     <a href="/p/create">Add new post</a>
