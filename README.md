@@ -35,7 +35,7 @@ To run this webpage, you must have:
 
 ```bash
 git clone https://github.com/Nauris-Putans/laravel-tutorial.git
-cd instagram-copy
+cd laravel-tutorial
 ```
 
 ### Setup
